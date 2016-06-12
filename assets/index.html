@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" ng-app="cmms">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>CMMS v.3</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/Roboto.css">   
+    <link rel="stylesheet" href="css/font-awesome.css">   
+
+
+    <!-- Styles -->
+    <link type="text/css" rel="stylesheet" href="css/app.css"/>
+  </head>
+
+<body id="app">
+  <!-- basic layout in here -->
+  <div class="wrapper">
+
+    <nav class="navigation">
+      <section class="container">
+        <a class="navigation-title" href="#" id="homepage">
+          <img class="img" src="img/logo.png" height="30" alt="SBS" title="SBS">
+          <h1 class="title">Alice & The Cat</h1>
+        </a>
+
+<!--         <a class="navigation-link float-right" href="#" id="logoutbtn" style="display: none;">
+          <h1 class="title">Logout</h1>
+        </a>
+ -->
+        <button class="button button-header float-right no-print" id="logoutbtn" style="display: none;">
+          Logout
+        </button>
+        <button class="button button-header float-right" id="userbtn" style="display: none;">
+          User
+        </button>
+      </section>
+    </nav>
+  </div>
+
+  <!-- Login Screen as default content -->
+  <div class="container" id="loginform">
+    <form>
+      <fieldset>
+        <label for="l-username">Name</label>
+        <input type="text" placeholder="User Name" id="l-username">
+        <label for="l-passwd">Password</label>
+        <!-- <input type="password" placeholder="Password" id="l-passwd"> -->
+        <input type="text" placeholder="Password" id="l-passwd">
+        <div class="remember-me">
+          <input type="checkbox" id="l-remember">
+          <label class="label-inline" for="l-remember">Remember Me</label>
+        </div>
+        <input class="button button-outline" type="submit" value="Login" id="l-loginbtn">
+      </fieldset>
+    </form>
+  </div>
+
+  <main>
+  </main>
+
+  <div id="user-profile" class="md-modal md-effect-7"></div>
+  <div class="md-overlay"></div>
+
+
+</body>
+
+<!-- Our Apps -->
+<script type="text/javascript">
+  document.getElementById("l-username").focus()
+</script>
+
+<script src="app.js"></script>
+
+</html>
